@@ -1,0 +1,16 @@
+Source: statsite
+Section: net
+Priority: extra
+Maintainer: Ori Livneh <ori@wikimedia.org>
+Build-Depends: debhelper (>= 8.0.0), scons (>= 1), libev-dev
+Standards-Version: 3.9.2
+Homepage: http://armon.github.io/statsite/
+Vcs-Git: https://gerrit.wikimedia.org/r/operations/debs/statsite -b debian
+Vcs-Browser: http://git.wikimedia.org/tree/operations%2Fdebs%statsite.git/refs%2Fheads%2Fdebian
+
+Package: statsite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: metrics aggregation server
+ Statsite is a network daemon that aggregates and summarizes application
+ metrics. It is wire-compatible with StatsD.
